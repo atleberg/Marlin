@@ -197,9 +197,9 @@
 
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 // Ultimaker
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+    #define  DEFAULT_Kp 24.65 // 22.2
+    #define  DEFAULT_Ki 2.47 // 1.08
+    #define  DEFAULT_Kd 61.59 // 114
 
 // MakerGear
 //    #define  DEFAULT_Kp 7.0
@@ -492,7 +492,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.76, 106.76, 800, 52.45}  // default steps per unit for Sumpod with Buldog Lite extruder (originally calculated to be 107, which was double of what's right
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.76, 106.76, 800, 684}  // Sumpod light extruder with geared (14:1) stepper motor and Mini hyena v2.0 (8mm shaft)
 #define DEFAULT_MAX_FEEDRATE          {215, 215, 5, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {500,500,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
